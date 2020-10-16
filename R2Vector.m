@@ -4,4 +4,5 @@ function [n]= R2Vec(R)
 theta=acos((trace(R)-1)/2);
 vector_M=((R-R')/2)/sin(theta);
 n=[vector_M(3,2),vector_M(1,3),vector_M(2,1)];
+n=n*thet;
 end
